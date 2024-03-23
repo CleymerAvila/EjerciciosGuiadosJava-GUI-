@@ -19,6 +19,7 @@ public class CuadrosLista implements ActionListener {
         JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(400, 300);
+        frame.setResizable(false);
         frame.setLocationRelativeTo(null);
 
         JPanel panel1 = new JPanel();
