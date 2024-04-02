@@ -42,7 +42,7 @@ public class CuadroVerificacion implements ActionListener {
         panel1.add(chkGato);
         panel1.add(chkRaton);
 
-        JButton btnAceptar = new JButton("Aceptar");
+        btnAceptar = new JButton("Aceptar");
         btnAceptar.setBounds(30, 190, 90, 25);
         btnAceptar.addActionListener(new CuadroVerificacion());
         panel1.add(btnAceptar);
