@@ -91,15 +91,5 @@ public class ListaModelos implements ActionListener {
             String mensaje="Estudiante Selecionado: ";
             etiResultado.setText(mensaje+listEstu.getSelectedValue().toString());
         }
-    }
-
-    
-
-    
-
-    
-
-    
-
-    
+    }    
 }
