@@ -55,6 +55,15 @@ class Ventana6 extends JFrame {
             menuArchivo.add(separador);
             menuArchivo.add(menuSalir); 
 
+            menuSalir.addActionListener(new ActionListener() {
+
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    dispose();
+                }
+                
+            });
+
             elegirArchivo = new JFileChooser();
             menuAbrir.addActionListener(new ActionListener(){
 
