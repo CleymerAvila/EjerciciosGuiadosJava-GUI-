@@ -1,6 +1,10 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
 public class InterfazDesdeCodigo extends JFrame {
@@ -51,5 +55,46 @@ public class InterfazDesdeCodigo extends JFrame {
         btnRestar = new JButton("Restar");
         btnRestar.setBounds(170, 160, 100, 20);
         this.getContentPane().add(btnRestar);
+
+        btnSumar.addActionListener(new ActionListener(){
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                btnSumarActionPerformed(e);
+            }
+
+        });
+
+        btnRestar.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e){
+                btnRestarActionPerformed(e);
+            }
+        });
+    }
+
+    public void btnSumarActionPerformed(ActionEvent e){
+        double a, b , s;
+
+        a = Double.parseDouble(txtNum1.getText());
+
+        b = Double.parseDouble(txtNum2.getText());
+
+        s = a + b;
+
+        JOptionPane.showMessageDialog(null, "La suma es "+s);
+        System.out.println("No sirve esa mierda");
+    }
+
+    public void btnRestarActionPerformed(ActionEvent e){
+        double a, b , s;
+
+        a = Double.parseDouble(txtNum1.getText());
+
+        b = Double.parseDouble(txtNum2.getText());
+
+        s = a - b;
+
+        JOptionPane.showMessageDialog(null, "La suma es "+s);
+        System.out.println("No sirve esa mierda");
     }
 }
