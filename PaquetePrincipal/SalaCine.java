@@ -1,3 +1,4 @@
+package PaquetePrincipal;
 public class SalaCine {
 
     // Ejercicio teorico como crear una clase, Ejercicio 28
