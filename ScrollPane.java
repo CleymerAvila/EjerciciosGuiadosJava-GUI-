@@ -35,6 +35,8 @@ class Ventana7 extends JFrame {
             setLayout(new BorderLayout());
             paneldesplazamiento = new JScrollPane();
             paneldesplazamiento.setPreferredSize(new Dimension(550, 350));
+            // Debe colocar la ruta de su Imagen a mostrar
+            // Con esta me funciona debe colocarla bien
             ImageIcon miImagen = new ImageIcon("C:/Users/CLEYMER/OneDrive/Imágenes/new/denji-chainsaw-man_1920x1080_xtrafondos.com.jpg");
             JLabel etiImagen = new JLabel(miImagen);
             paneldesplazamiento.setViewportView(etiImagen);

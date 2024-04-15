@@ -82,7 +82,6 @@ public class InterfazDesdeCodigo extends JFrame {
         s = a + b;
 
         JOptionPane.showMessageDialog(null, "La suma es "+s);
-        System.out.println("No sirve esa mierda");
     }
 
     public void btnRestarActionPerformed(ActionEvent e){
@@ -95,6 +94,5 @@ public class InterfazDesdeCodigo extends JFrame {
         s = a - b;
 
         JOptionPane.showMessageDialog(null, "La suma es "+s);
-        System.out.println("No sirve esa mierda");
     }
 }
